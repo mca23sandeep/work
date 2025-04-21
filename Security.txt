@@ -71,6 +71,330 @@ PUT /_security/role/sales_manager
   ]
 }
 
+Installing Siren Federate Plugin
+++++++++++++++++++++++++++++++++++++++ 
+Elasticsearch plugins and settings.
+
+
+https://community.siren.io/t/adding-the-siren-federate-plugin-to-an-elasticsearch-service/436
+
+
+employees
+++++++++++++++++++++++
+{
+  "employee_id": "E001",
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "department_id": "D001"
+}
+
+
+departments
+++++++++++++++++++++++
+
+{
+  "department_id": "D001",
+  "department_name": "Sales"
+}
+
+
+worklogs
+++++++++++++++++++++++
+
+{
+  "worklog_id": "W001",
+  "employee_id": "E001",
+  "date": "2025-01-20",
+  "hours_worked": 8,
+  "project_id": "P001"
+}
+
+
+Siren Federate: Query
+++++++++++++++++++++++++++++++++++++++++++++
+
+
+{
+  "select": ["employees.name", "employees.email", "departments.department_name", "worklogs.date", "worklogs.hours_worked"],
+  "from": {
+    "join": {
+      "indices": [
+        { "index": "employees", "alias": "employees" },
+        { "index": "departments", "alias": "departments" },
+        { "index": "worklogs", "alias": "worklogs" }
+      ],
+      "on": {
+        "employees.department_id": "departments.department_id",
+        "employees.employee_id": "worklogs.employee_id"
+      }
+    }
+  }
+}
+
+
+Query Response
+++++++++++++++++++++++++++++++++++++++++++++
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "department_name": "Sales",
+    "date": "2025-01-20",
+    "hours_worked": 8
+  }
+]
+
+Query Request in Siren Federate
+++++++++++++++++++++++++++++++++++++++++++++
+POST /_siren/query
+{
+  "query": {
+    "type": "join",
+    "indices": ["employees", "departments"],
+    "filters": [
+      {
+        "source": "employees",
+        "destination": "departments",
+        "source_field": "department_id",
+        "destination_field": "department_id"
+      }
+    ],
+    "fields": {
+      "employee_id": "employees.employee_id",
+      "name": "employees.name",
+      "working_hours": "employees.working_hours",
+      "department_name": "departments.name"
+    }
+  }
+}
+
+
+
+Siren Federate Query Response
+++++++++++++++++++++++++++++++++++++++++++++
+
+
+{
+  "hits": {
+    "total": { "value": 2, "relation": "eq" },
+    "hits": [
+      {
+        "_id": "1",
+        "_source": {
+          "employee_id": "E001",
+          "name": "John Doe",
+          "working_hours": [
+            {"day": "Monday", "start": "09:00", "end": "17:00"},
+            {"day": "Tuesday", "start": "09:00", "end": "17:00"},
+            {"day": "Wednesday", "start": "09:00", "end": "17:00"}
+          ],
+          "department_name": "Sales"
+        }
+      },
+      {
+        "_id": "2",
+        "_source": {
+          "employee_id": "E002",
+          "name": "Jane Smith",
+          "working_hours": [
+            {"day": "Monday", "start": "08:00", "end": "16:00"},
+            {"day": "Tuesday", "start": "08:00", "end": "16:00"},
+            {"day": "Wednesday", "start": "08:00", "end": "16:00"}
+          ],
+          "department_name": "Marketing"
+        }
+      }
+    ]
+  }
+}
+
+
+
+
+
+Query Request in Siren Federate 
+++++++++++++++++++++++++++++++++++++++++++++
+{
+  "query": {
+    "type": "join",
+    "indices": ["employees", "departments", "worklog"],
+    "filters": [
+      {
+        "source": "employees",
+        "destination": "departments",
+        "source_field": "department_id",
+        "destination_field": "department_id"
+      },
+      {
+        "source": "employees",
+        "destination": "worklog",
+        "source_field": "employee_id",
+        "destination_field": "employee_id"
+      }
+    ],
+    "fields": {
+      "employee_id": "employees.employee_id",
+      "name": "employees.name",
+      "working_hours": "employees.working_hours",
+      "department_name": "departments.name",
+      "worklogs": {
+        "worklog_id": "worklog.worklog_id",
+        "date": "worklog.date",
+        "hours_worked": "worklog.hours_worked"
+      }
+    }
+  }
+}
+
+
+Siren Federate Query Response
+++++++++++++++++++++++++++++++++++++++++++++
+
+
+{
+  "hits": {
+    "total": {
+      "value": 1,
+      "relation": "eq"
+    },
+    "hits": [
+      {
+        "_source": {
+          "employee_id": "123",
+          "name": "John Doe",
+          "working_hours": "9 AM - 5 PM",
+          "department_name": "Sales",
+          "worklogs": [
+            {
+              "worklog_id": "W123",
+              "date": "2025-01-21",
+              "hours_worked": 8
+            },
+            {
+              "worklog_id": "W124",
+              "date": "2025-01-22",
+              "hours_worked": 7
+            },
+            {
+              "worklog_id": "W125",
+              "date": "2025-01-23",
+              "hours_worked": 6
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+
+
+
+GET employees_data/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "joinDate": {
+              "gte": "now-6M/M", 
+              "lte": "now/M"
+            }
+          }
+        },
+        {
+          "nested": {
+            "path": "addresses",
+            "query": {
+              "bool": {
+                "should": [
+                  { "match": { "addresses.state": "California" } },
+                  { "match": { "addresses.state": "Texas" } },
+                  { "match": { "addresses.state": "Florida" } }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "filter": [
+        {
+          "bool": {
+            "should": [
+              {
+                "nested": {
+                  "path": "salary",
+                  "query": {
+                    "range": {
+                      "salary.amount": {
+                        "gte": 70000,
+                        "lte": 100000
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "nested": {
+                  "path": "leaves",
+                  "query": {
+                    "bool": {
+                      "must": [
+                        { "match": { "leaves.leave_type": "sick" } },
+                        {
+                          "range": {
+                            "leaves.leave_start_date": {
+                              "gte": "now-1y/M",
+                              "lte": "now/M"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+			   "minimum_should_match": 1
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+
+GET employees_data/_search
+{
+ "aggs": {
+    "nested_leaves": {
+      "nested": {
+        "path": "leaves"
+      },
+      "aggs": {
+        "sick_leave_count": {
+          "filter": {
+            "term": {
+              "leaves.leave_type": "sick"
+            }
+          },
+          "aggs": {
+            "count_sick_leaves": {
+              "value_count": {
+                "field": "leaves.leave_type"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 
 
 
