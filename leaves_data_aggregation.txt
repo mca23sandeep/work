@@ -1,0 +1,117 @@
+PUT /leaves_data
+{
+  "mappings": {
+    "properties": {
+      "empid": {
+        "type": "keyword"
+      },
+      "leave_type": {
+        "type": "keyword"
+      },
+      "leave_start_date": {
+        "type": "keyword"
+      },
+      "leave_end_date": {
+        "type": "keyword"
+      },
+      "number_of_days": {
+        "type": "keyword"
+      },
+      "leave_status": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+
+GET employees_data/_search
+
+GET leave_data/_search
+
+
+
+
+PUT /leaves_data
+{
+  "mappings": {
+    "properties": {
+      "empid": {
+        "type": "keyword"
+      },
+      "leave_type": {
+        "type": "keyword"
+      },
+      "leave_start_date": {
+        "type": "keyword"
+      },
+      "leave_end_date": {
+        "type": "keyword"
+      },
+      "number_of_days": {
+        "type": "keyword"
+      },
+      "leave_status": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+
+POST /_reindex
+{
+  "source": {
+    "index": "leave_data"
+  },
+  "dest": {
+    "index": "leaves_data"
+  }
+}
+
+
+
+
+PUT _transform/leaves_data_aggregation
+{
+  "source": {
+    "index": "leaves_data"
+  },
+  "dest": {
+    "index": "leaves_aggregated"
+  },
+  "pivot": {
+    "group_by": {
+      "empid": {
+        "terms": {
+          "field": "empid"
+        }
+      }
+    },
+    "aggregations": {
+      "leaves": {
+        "scripted_metric": {
+          "init_script": "state.leaves = []",
+          "map_script": """
+            state.leaves.add([
+              'leave_type': doc['leave_type'].value,
+              'leave_start_date': doc['leave_start_date'].value,
+              'leave_end_date': doc['leave_end_date'].value,
+              'number_of_days': doc['number_of_days'].value,
+              'leave_status': doc['leave_status'].value
+            ])
+          """,
+          "combine_script": "return state.leaves",
+          "reduce_script": """
+            return states.stream()
+                         .flatMap(s -> s.stream())
+                         .collect(Collectors.toList());
+          """
+        }
+      }
+    }
+  }
+}
+
+
+POST _transform/leaves_data_aggregation/_start

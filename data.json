@@ -1,0 +1,3423 @@
+{
+    "employees": [
+        {
+            "id": "employee12345",
+            "empid": "emp12345",
+            "empname": "John Doe",
+            "deptid": "D01",
+            "role": ["Admin"]
+        },
+        {
+            "id": "employee12346",
+            "empid": "emp12346",
+            "empname": "Jane Smith",
+            "deptid": "D02",
+            "role": ["Admin", "HR"]
+        },
+        {
+            "id": "employee12347",
+            "empid": "emp12347",
+            "empname": "James Brown",
+            "deptid": "D03",
+            "role": ["Admin", "HR", "Manager"]
+        },
+        {
+            "id": "employee12348",
+            "empid": "emp12348",
+            "empname": "Emily Davis",
+            "deptid": "D04",
+            "role": ["Super Admin"]
+        },
+        {
+            "id": "employee12349",
+            "empid": "emp12349",
+            "empname": "Michael Wilson",
+            "deptid": "D05",
+            "role": ["Admin", "HR", "Manager", "Team Lead"]
+        },
+        {
+            "id": "employee12350",
+            "empid": "emp12350",
+            "empname": "Olivia Taylor",
+            "deptid": "D02",
+            "role": ["Admin", "HR"]
+        },
+        {
+            "id": "employee12351",
+            "empid": "emp12351",
+            "empname": "William Anderson",
+            "deptid": "D03",
+            "role": ["Admin", "HR", "Manager"]
+        },
+        {
+            "id": "employee12352",
+            "empid": "emp12352",
+            "empname": "Isabella Thomas",
+            "deptid": "D04",
+            "role": ["Super Admin"]
+        },
+        {
+            "id": "employee12353",
+            "empid": "emp12353",
+            "empname": "Matthew Jackson",
+            "deptid": "D05",
+            "role": ["Admin", "HR", "Manager", "Team Lead"]
+        },
+        {
+            "id": "employee12354",
+            "empid": "emp12354",
+            "empname": "Sophia White",
+            "deptid": "D01",
+            "role": ["Admin"]
+        },
+        {
+            "id": "employee12355",
+            "empid": "emp12355",
+            "empname": "David Harris",
+            "deptid": "D02",
+            "role": ["Admin", "HR"]
+        },
+        {
+            "id": "employee12356",
+            "empid": "emp12356",
+            "empname": "Anna Lee",
+            "deptid": "D03",
+            "role": ["Admin", "HR", "Manager"]
+        },
+        {
+            "id": "employee12357",
+            "empid": "emp12357",
+            "empname": "Robert Clark",
+            "deptid": "D04",
+            "role": ["Super Admin"]
+        },
+        {
+            "id": "employee12358",
+            "empid": "emp12358",
+            "empname": "Lisa Harris",
+            "deptid": "D05",
+            "role": ["Admin", "HR", "Manager", "Team Lead"]
+        },
+        {
+            "id": "employee12359",
+            "empid": "emp12359",
+            "empname": "Daniel Walker",
+            "deptid": "D01",
+            "role": ["Admin"]
+        },
+        {
+            "id": "employee12360",
+            "empid": "emp12360",
+            "empname": "Jessica Young",
+            "deptid": "D02",
+            "role": ["Admin", "HR"]
+        },
+        {
+            "id": "employee12361",
+            "empid": "emp12361",
+            "empname": "Christopher King",
+            "deptid": "D03",
+            "role": ["Admin", "HR", "Manager"]
+        },
+        {
+            "id": "employee12362",
+            "empid": "emp12362",
+            "empname": "Charlotte Scott",
+            "deptid": "D04",
+            "role": ["Super Admin"]
+        },
+        {
+            "id": "employee12363",
+            "empid": "emp12363",
+            "empname": "Matthew Allen",
+            "deptid": "D05",
+            "role": ["Admin", "HR", "Manager", "Team Lead"]
+        },
+        {
+            "id": "employee12364",
+            "empid": "emp12364",
+            "empname": "Katherine White",
+            "deptid": "D01",
+            "role": ["Admin"]
+        },
+        {
+            "id": "employee12365",
+            "empid": "emp12365",
+            "empname": "Daniel Wright",
+            "deptid": "D02",
+            "role": ["Admin", "HR"]
+        },
+        {
+            "id": "employee12366",
+            "empid": "emp12366",
+            "empname": "James Turner",
+            "deptid": "D03",
+            "role": ["Admin", "HR", "Manager"]
+        },
+        {
+            "id": "employee12367",
+            "empid": "emp12367",
+            "empname": "Elizabeth Lee",
+            "deptid": "D04",
+            "role": ["Super Admin"]
+        },
+        {
+            "id": "employee12368",
+            "empid": "emp12368",
+            "empname": "Joshua Moore",
+            "deptid": "D05",
+            "role": ["Admin", "HR", "Manager", "Team Lead"]
+        },
+        {
+            "id": "employee12369",
+            "empid": "emp12369",
+            "empname": "Nicole Martinez",
+            "deptid": "D01",
+            "role": ["Admin"]
+        },
+        {
+            "id": "employee12370",
+            "empid": "emp12370",
+            "empname": "Samuel Garcia",
+            "deptid": "D02",
+            "role": ["Admin", "HR"]
+        },
+        {
+            "id": "employee12371",
+            "empid": "emp12371",
+            "empname": "Anna Robinson",
+            "deptid": "D03",
+            "role": ["Admin", "HR", "Manager"]
+        },
+        {
+            "id": "employee12372",
+            "empid": "emp12372",
+            "empname": "Michael Nelson",
+            "deptid": "D04",
+            "role": ["Super Admin"]
+        },
+        {
+            "id": "employee12373",
+            "empid": "emp12373",
+            "empname": "Karen Perez",
+            "deptid": "D05",
+            "role": ["Admin", "HR", "Manager", "Team Lead"]
+        },
+        {
+            "id": "employee12374",
+            "empid": "emp12374",
+            "empname": "Robert Brown",
+            "deptid": "D01",
+            "role": ["Admin"]
+        }
+    ],
+    "departments": [
+        {
+            "id": 1,
+            "deptid": "D01",
+            "deptname": "HR"
+        },
+        {
+            "id": 2,
+            "deptid": "D02",
+            "deptname": "Manager"
+        },
+        {
+            "id": 3,
+            "deptid": "D03",
+            "deptname": "Team Lead"
+        },
+        {
+            "id": 4,
+            "deptid": "D04",
+            "deptname": "Admin"
+        },
+        {
+            "id": 5,
+            "deptid": "D05",
+            "deptname": "Employee"
+        }
+    ],
+	"roles":[
+        {
+            "id": 1,
+            "accessid": "acc123",
+            "role": "HR"
+        },
+        {
+            "id": 2,
+            "accessid": "acc124",
+            "role": "Manager"
+        },
+        {
+            "id": 3,
+            "accessid": "acc125",
+            "role": "Team Lead"
+        },
+        {
+            "id": 4,
+            "accessid": "acc126",
+            "role": "Admin"
+        },
+        {
+            "id": 5,
+            "accessid": "acc127",
+            "role": "Employee"
+        },
+        {
+            "id": 6,
+            "accessid": "acc128",
+            "role": "Super Admin"
+        }
+    ],
+   "salarys": [
+    {
+        "salaryid": "sal1",
+        "empid": "emp12345",
+        "amount": 50000,
+        "role": ["Admin"]
+    },
+    {
+        "salaryid": "sal2",
+        "empid": "emp12346",
+        "amount": 60000,
+        "role": ["Admin", "HR"]
+    },
+    {
+        "salaryid": "sal3",
+        "empid": "emp12347",
+        "amount": 70000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal4",
+        "empid": "emp12348",
+        "amount": 80000,
+        "role": ["Super Admin"]
+    },
+    {
+        "salaryid": "sal5",
+        "empid": "emp12350",
+        "amount": 55000,
+        "role": ["Admin", "HR"]
+    },
+    {
+        "salaryid": "sal6",
+        "empid": "emp12349",
+        "amount": 75000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal7",
+        "empid": "emp12353",
+        "amount": 72000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal8",
+        "empid": "emp12351",
+        "amount": 68000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal9",
+        "empid": "emp12354",
+        "amount": 50000,
+        "role": ["Admin"]
+    },
+    {
+        "salaryid": "sal10",
+        "empid": "emp12352",
+        "amount": 85000,
+        "role": ["Super Admin"]
+    },
+    {
+        "salaryid": "sal11",
+        "empid": "emp12355",
+        "amount": 60000,
+        "role": ["Admin", "HR"]
+    },
+    {
+        "salaryid": "sal12",
+        "empid": "emp12356",
+        "amount": 70000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal13",
+        "empid": "emp12357",
+        "amount": 80000,
+        "role": ["Super Admin"]
+    },
+    {
+        "salaryid": "sal14",
+        "empid": "emp12358",
+        "amount": 75000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal15",
+        "empid": "emp12359",
+        "amount": 50000,
+        "role": ["Admin"]
+    },
+    {
+        "salaryid": "sal16",
+        "empid": "emp12360",
+        "amount": 125000,
+        "role": ["Admin", "HR"]
+    },
+    {
+        "salaryid": "sal17",
+        "empid": "emp12361",
+        "amount": 135000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal18",
+        "empid": "emp12362",
+        "amount": 145000,
+        "role": ["Super Admin"]
+    },
+    {
+        "salaryid": "sal19",
+        "empid": "emp12363",
+        "amount": 155000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal20",
+        "empid": "emp12364",
+        "amount": 160000,
+        "role": ["Admin"]
+    },
+    {
+        "salaryid": "sal21",
+        "empid": "emp12365",
+        "amount": 170000,
+        "role": ["Admin", "HR"]
+    },
+    {
+        "salaryid": "sal22",
+        "empid": "emp12366",
+        "amount": 175000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal23",
+        "empid": "emp12367",
+        "amount": 180000,
+        "role": ["Super Admin"]
+    },
+    {
+        "salaryid": "sal24",
+        "empid": "emp12368",
+        "amount": 190000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal25",
+        "empid": "emp12369",
+        "amount": 195000,
+        "role": ["Admin"]
+    },
+    {
+        "salaryid": "sal26",
+        "empid": "emp12370",
+        "amount": 200000,
+        "role": ["Admin", "HR"]
+    },
+    {
+        "salaryid": "sal27",
+        "empid": "emp12371",
+        "amount": 210000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal28",
+        "empid": "emp12372",
+        "amount": 220000,
+        "role": ["Super Admin"]
+    },
+    {
+        "salaryid": "sal29",
+        "empid": "emp12373",
+        "amount": 230000,
+        "role": ["Admin", "HR", "Manager"]
+    },
+    {
+        "salaryid": "sal30",
+        "empid": "emp12374",
+        "amount": 240000,
+        "role": ["Admin"]
+    }
+],
+  "joiningDates": [
+    {
+      "id": "join1",
+      "empid": "emp12345",
+      "joinDate": "2015-06-15"
+    },
+    {
+      "id": "join2",
+      "empid": "emp12346",
+      "joinDate": "2016-04-20"
+    },
+    {
+      "id": "join3",
+      "empid": "emp12347",
+      "joinDate": "2017-01-11"
+    },
+    {
+      "id": "join4",
+      "empid": "emp12348",
+      "joinDate": "2018-09-03"
+    },
+    {
+      "id": "join6",
+      "empid": "emp12349",
+      "joinDate": "2019-12-25"
+    },
+    {
+      "id": "join5",
+      "empid": "emp12350",
+      "joinDate": "2020-07-14"
+    },
+    {
+      "id": "join8",
+      "empid": "emp12351",
+      "joinDate": "2021-03-09"
+    },
+    {
+      "id": "join10",
+      "empid": "emp12352",
+      "joinDate": "2022-11-17"
+    },
+    {
+      "id": "join7",
+      "empid": "emp12353",
+      "joinDate": "2023-05-22"
+    },
+    {
+      "id": "join9",
+      "empid": "emp12354",
+      "joinDate": "2024-08-30"
+    },
+    {
+      "id": "join11",
+      "empid": "emp12355",
+      "joinDate": "2014-03-18"
+    },
+    {
+      "id": "join12",
+      "empid": "emp12356",
+      "joinDate": "2015-02-14"
+    },
+    {
+      "id": "join13",
+      "empid": "emp12357",
+      "joinDate": "2016-10-01"
+    },
+    {
+      "id": "join14",
+      "empid": "emp12358",
+      "joinDate": "2017-06-22"
+    },
+    {
+      "id": "join15",
+      "empid": "emp12359",
+      "joinDate": "2018-01-29"
+    },
+    {
+      "id": "join16",
+      "empid": "emp12360",
+      "joinDate": "2019-04-11"
+    },
+    {
+      "id": "join17",
+      "empid": "emp12361",
+      "joinDate": "2020-05-02"
+    },
+    {
+      "id": "join18",
+      "empid": "emp12362",
+      "joinDate": "2021-11-25"
+    },
+    {
+      "id": "join19",
+      "empid": "emp12363",
+      "joinDate": "2022-07-17"
+    },
+    {
+      "id": "join20",
+      "empid": "emp12364",
+      "joinDate": "2023-03-28"
+    },
+    {
+      "id": "join21",
+      "empid": "emp12365",
+      "joinDate": "2024-05-19"
+    },
+    {
+      "id": "join22",
+      "empid": "emp12366",
+      "joinDate": "2022-02-06"
+    },
+    {
+      "id": "join23",
+      "empid": "emp12367",
+      "joinDate": "2021-08-15"
+    },
+    {
+      "id": "join24",
+      "empid": "emp12368",
+      "joinDate": "2020-11-08"
+    },
+    {
+      "id": "join25",
+      "empid": "emp12369",
+      "joinDate": "2019-09-17"
+    },
+    {
+      "id": "join26",
+      "empid": "emp12370",
+      "joinDate": "2018-04-23"
+    },
+    {
+      "id": "join27",
+      "empid": "emp12371",
+      "joinDate": "2017-12-01"
+    },
+    {
+      "id": "join28",
+      "empid": "emp12372",
+      "joinDate": "2016-05-10"
+    }
+  ],
+"addresses": [
+    {
+        "id": "addr001",
+        "empid": "emp12345",
+        "street": "123 Oak St",
+        "city": "Springfield",
+        "zipcode": "62701",
+        "contact": "123-456-7890",
+        "country": "USA",
+        "state": "Illinois"
+    },
+    {
+        "id": "addr002",
+        "empid": "emp12345",
+        "street": "456 Maple Ave",
+        "city": "Springfield",
+        "zipcode": "62702",
+        "contact": "123-456-7891",
+        "country": "USA",
+        "state": "Illinois"
+    },
+    {
+        "id": "addr003",
+        "empid": "emp12346",
+        "street": "456 Pine St",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "contact": "987-654-3210",
+        "country": "USA",
+        "state": "Connecticut"
+    },
+    {
+        "id": "addr004",
+        "empid": "emp12346",
+        "street": "789 Birch Rd",
+        "city": "Greenwich",
+        "zipcode": "06831",
+        "contact": "987-654-3211",
+        "country": "USA",
+        "state": "Connecticut"
+    },
+    {
+        "id": "addr005",
+        "empid": "emp12347",
+        "street": "789 Maple Ave",
+        "city": "Lakewood",
+        "zipcode": "44107",
+        "contact": "555-555-5555",
+        "country": "USA",
+        "state": "Ohio"
+    },
+    {
+        "id": "addr006",
+        "empid": "emp12347",
+        "street": "234 Oak St",
+        "city": "Lakewood",
+        "zipcode": "44108",
+        "contact": "555-555-5556",
+        "country": "USA",
+        "state": "Ohio"
+    },
+    {
+        "id": "addr007",
+        "empid": "emp12348",
+        "street": "321 Birch Rd",
+        "city": "Clinton",
+        "zipcode": "07068",
+        "contact": "333-333-3333",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr008",
+        "empid": "emp12349",
+        "street": "654 Cedar Ln",
+        "city": "Newark",
+        "zipcode": "07102",
+        "contact": "444-444-4444",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr009",
+        "empid": "emp12349",
+        "street": "321 Oak St",
+        "city": "Newark",
+        "zipcode": "07103",
+        "contact": "444-444-4445",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr010",
+        "empid": "emp12350",
+        "street": "987 Elm St",
+        "city": "Montclair",
+        "zipcode": "07042",
+        "contact": "222-222-2222",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr011",
+        "empid": "emp12350",
+        "street": "123 Maple Ave",
+        "city": "Montclair",
+        "zipcode": "07043",
+        "contact": "222-222-2223",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr012",
+        "empid": "emp12351",
+        "street": "234 Walnut St",
+        "city": "Westfield",
+        "zipcode": "07090",
+        "contact": "555-555-5557",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr013",
+        "empid": "emp12351",
+        "street": "567 Pine St",
+        "city": "Westfield",
+        "zipcode": "07091",
+        "contact": "555-555-5558",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr014",
+        "empid": "emp12352",
+        "street": "135 Redwood Dr",
+        "city": "Union",
+        "zipcode": "07083",
+        "contact": "111-111-1111",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr015",
+        "empid": "emp12352",
+        "street": "890 Birch Rd",
+        "city": "Union",
+        "zipcode": "07084",
+        "contact": "111-111-1112",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr016",
+        "empid": "emp12353",
+        "street": "765 Pinecrest Blvd",
+        "city": "Elizabeth",
+        "zipcode": "07201",
+        "contact": "666-666-6666",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr017",
+        "empid": "emp12353",
+        "street": "123 Oak Ave",
+        "city": "Elizabeth",
+        "zipcode": "07202",
+        "contact": "666-666-6667",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr018",
+        "empid": "emp12354",
+        "street": "890 Willow Way",
+        "city": "Paterson",
+        "zipcode": "07501",
+        "contact": "777-777-7777",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr019",
+        "empid": "emp12354",
+        "street": "456 Oak St",
+        "city": "Paterson",
+        "zipcode": "07502",
+        "contact": "777-777-7778",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr020",
+        "empid": "emp12355",
+        "street": "567 Cedar St",
+        "city": "Fairfield",
+        "zipcode": "06824",
+        "contact": "888-888-8888",
+        "country": "USA",
+        "state": "Connecticut"
+    },
+    {
+        "id": "addr021",
+        "empid": "emp12356",
+        "street": "123 Maple Dr",
+        "city": "Columbus",
+        "zipcode": "43210",
+        "contact": "999-999-9999",
+        "country": "USA",
+        "state": "Ohio"
+    },
+    {
+        "id": "addr022",
+        "empid": "emp12357",
+        "street": "987 Birch Rd",
+        "city": "Trenton",
+        "zipcode": "08618",
+        "contact": "555-777-8888",
+        "country": "USA",
+        "state": "New Jersey"
+    },
+    {
+        "id": "addr023",
+        "empid": "emp12358",
+        "street": "123 Oak Blvd",
+        "city": "New York",
+        "zipcode": "10001",
+        "contact": "333-555-7777",
+        "country": "USA",
+        "state": "New York"
+    },
+    {
+        "id": "addr024",
+        "empid": "emp12359",
+        "street": "456 Pinecrest Dr",
+        "city": "Boston",
+        "zipcode": "02115",
+        "contact": "444-222-8888",
+        "country": "USA",
+        "state": "Massachusetts"
+    },
+    {
+        "id": "addr025",
+        "empid": "emp12360",
+        "street": "234 Elm Rd",
+        "city": "Chicago",
+        "zipcode": "60611",
+        "contact": "555-666-4444",
+        "country": "USA",
+        "state": "Illinois"
+    },
+    {
+        "id": "addr026",
+        "empid": "emp12361",
+        "street": "765 Maple Ln",
+        "city": "New Haven",
+        "zipcode": "06511",
+        "contact": "777-555-3333",
+        "country": "USA",
+        "state": "Connecticut"
+    },
+    {
+        "id": "addr027",
+        "empid": "emp12362",
+        "street": "321 Walnut Ave",
+        "city": "Philadelphia",
+        "zipcode": "19102",
+        "contact": "444-333-2222",
+        "country": "USA",
+        "state": "Pennsylvania"
+    },
+    {
+        "id": "addr028",
+        "empid": "emp12363",
+        "street": "654 Birch Dr",
+        "city": "Detroit",
+        "zipcode": "48202",
+        "contact": "333-444-5555",
+        "country": "USA",
+        "state": "Michigan"
+    },
+    {
+        "id": "addr029",
+        "empid": "emp12364",
+        "street": "890 Pine St",
+        "city": "Atlanta",
+        "zipcode": "30303",
+        "contact": "222-333-4444",
+        "country": "USA",
+        "state": "Georgia"
+    },
+    {
+        "id": "addr030",
+        "empid": "emp12365",
+        "street": "123 Cedar Ave",
+        "city": "Baltimore",
+        "zipcode": "21201",
+        "contact": "333-444-5555",
+        "country": "USA",
+        "state": "Maryland"
+    }
+],
+"leaves":[
+    {
+        "id": "leave001",
+        "empid": "emp12345",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-16",
+        "leave_end_date": "2025-06-20",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave002",
+        "empid": "emp12358",
+        "leave_type": "sick",
+        "leave_start_date": "2025-10-09",
+        "leave_end_date": "2025-10-11",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave003",
+        "empid": "emp12359",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-02-04",
+        "leave_end_date": "2025-02-06",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave004",
+        "empid": "emp12349",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-14",
+        "leave_end_date": "2025-07-19",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave005",
+        "empid": "emp12371",
+        "leave_type": "sick",
+        "leave_start_date": "2025-10-24",
+        "leave_end_date": "2025-10-27",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave006",
+        "empid": "emp12366",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-07",
+        "leave_end_date": "2025-07-12",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave007",
+        "empid": "emp12360",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-22",
+        "leave_end_date": "2025-05-26",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave008",
+        "empid": "emp12371",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-09-21",
+        "leave_end_date": "2025-09-25",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave009",
+        "empid": "emp12370",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-17",
+        "leave_end_date": "2025-02-18",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave010",
+        "empid": "emp12354",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-18",
+        "leave_end_date": "2025-11-19",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave011",
+        "empid": "emp12356",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-11",
+        "leave_end_date": "2025-06-12",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave012",
+        "empid": "emp12374",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-09",
+        "leave_end_date": "2025-11-11",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave013",
+        "empid": "emp12370",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-23",
+        "leave_end_date": "2025-01-24",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave014",
+        "empid": "emp12358",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-24",
+        "leave_end_date": "2025-04-28",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave015",
+        "empid": "emp12364",
+        "leave_type": "personal",
+        "leave_start_date": "2025-06-20",
+        "leave_end_date": "2025-06-24",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave016",
+        "empid": "emp12357",
+        "leave_type": "sick",
+        "leave_start_date": "2025-03-22",
+        "leave_end_date": "2025-03-23",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave017",
+        "empid": "emp12362",
+        "leave_type": "sick",
+        "leave_start_date": "2025-12-15",
+        "leave_end_date": "2025-12-17",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave018",
+        "empid": "emp12371",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-27",
+        "leave_end_date": "2025-02-28",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave019",
+        "empid": "emp12353",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-13",
+        "leave_end_date": "2025-07-15",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave020",
+        "empid": "emp12346",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-21",
+        "leave_end_date": "2025-11-24",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave021",
+        "empid": "emp12349",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-01",
+        "leave_end_date": "2025-04-06",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave022",
+        "empid": "emp12362",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-03-20",
+        "leave_end_date": "2025-03-22",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave023",
+        "empid": "emp12374",
+        "leave_type": "sick",
+        "leave_start_date": "2025-12-12",
+        "leave_end_date": "2025-12-13",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave024",
+        "empid": "emp12347",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-18",
+        "leave_end_date": "2025-07-22",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave025",
+        "empid": "emp12360",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-12-17",
+        "leave_end_date": "2025-12-22",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave026",
+        "empid": "emp12362",
+        "leave_type": "sick",
+        "leave_start_date": "2025-11-12",
+        "leave_end_date": "2025-11-13",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave027",
+        "empid": "emp12366",
+        "leave_type": "personal",
+        "leave_start_date": "2025-10-30",
+        "leave_end_date": "2025-10-31",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave028",
+        "empid": "emp12358",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-08",
+        "leave_end_date": "2025-06-12",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave029",
+        "empid": "emp12347",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-22",
+        "leave_end_date": "2025-07-27",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave030",
+        "empid": "emp12361",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-10-18",
+        "leave_end_date": "2025-10-21",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave031",
+        "empid": "emp12354",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-05",
+        "leave_end_date": "2025-09-09",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave032",
+        "empid": "emp12365",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-13",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave033",
+        "empid": "emp12369",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-17",
+        "leave_end_date": "2025-11-19",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave034",
+        "empid": "emp12360",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-11",
+        "leave_end_date": "2025-01-16",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave035",
+        "empid": "emp12345",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-21",
+        "leave_end_date": "2025-02-26",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave036",
+        "empid": "emp12374",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-03-16",
+        "leave_end_date": "2025-03-17",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave037",
+        "empid": "emp12368",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-20",
+        "leave_end_date": "2025-07-21",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave038",
+        "empid": "emp12366",
+        "leave_type": "personal",
+        "leave_start_date": "2025-03-25",
+        "leave_end_date": "2025-03-26",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave039",
+        "empid": "emp12364",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-28",
+        "leave_end_date": "2025-01-31",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave040",
+        "empid": "emp12366",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-21",
+        "leave_end_date": "2025-06-26",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave041",
+        "empid": "emp12353",
+        "leave_type": "sick",
+        "leave_start_date": "2025-04-08",
+        "leave_end_date": "2025-04-11",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave042",
+        "empid": "emp12346",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-06",
+        "leave_end_date": "2025-11-10",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave043",
+        "empid": "emp12361",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-04",
+        "leave_end_date": "2025-02-09",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave044",
+        "empid": "emp12359",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-03",
+        "leave_end_date": "2025-08-06",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave045",
+        "empid": "emp12362",
+        "leave_type": "sick",
+        "leave_start_date": "2025-08-16",
+        "leave_end_date": "2025-08-19",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave046",
+        "empid": "emp12358",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-09-10",
+        "leave_end_date": "2025-09-15",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave047",
+        "empid": "emp12370",
+        "leave_type": "sick",
+        "leave_start_date": "2025-08-14",
+        "leave_end_date": "2025-08-15",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave048",
+        "empid": "emp12349",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-02",
+        "leave_end_date": "2025-02-06",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave049",
+        "empid": "emp12370",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-01",
+        "leave_end_date": "2025-04-02",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave050",
+        "empid": "emp12349",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-03",
+        "leave_end_date": "2025-01-06",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave051",
+        "empid": "emp12372",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-26",
+        "leave_end_date": "2025-01-28",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave052",
+        "empid": "emp12367",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-04-29",
+        "leave_end_date": "2025-05-01",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave053",
+        "empid": "emp12360",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-27",
+        "leave_end_date": "2025-05-02",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave054",
+        "empid": "emp12362",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-21",
+        "leave_end_date": "2025-09-26",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave055",
+        "empid": "emp12373",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-17",
+        "leave_end_date": "2025-05-18",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave056",
+        "empid": "emp12365",
+        "leave_type": "sick",
+        "leave_start_date": "2025-10-19",
+        "leave_end_date": "2025-10-24",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave057",
+        "empid": "emp12360",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-27",
+        "leave_end_date": "2025-07-28",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave058",
+        "empid": "emp12374",
+        "leave_type": "sick",
+        "leave_start_date": "2025-02-01",
+        "leave_end_date": "2025-02-04",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave059",
+        "empid": "emp12351",
+        "leave_type": "personal",
+        "leave_start_date": "2025-08-25",
+        "leave_end_date": "2025-08-28",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave060",
+        "empid": "emp12350",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-30",
+        "leave_end_date": "2025-02-03",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave061",
+        "empid": "emp12360",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-03",
+        "leave_end_date": "2025-05-07",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave062",
+        "empid": "emp12360",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-07",
+        "leave_end_date": "2025-09-09",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave063",
+        "empid": "emp12357",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-10-23",
+        "leave_end_date": "2025-10-24",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave064",
+        "empid": "emp12346",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-13",
+        "leave_end_date": "2025-01-16",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave065",
+        "empid": "emp12367",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-02",
+        "leave_end_date": "2025-07-06",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave066",
+        "empid": "emp12347",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-23",
+        "leave_end_date": "2025-12-28",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave067",
+        "empid": "emp12354",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-11",
+        "leave_end_date": "2025-07-12",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave068",
+        "empid": "emp12357",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-03",
+        "leave_end_date": "2025-07-06",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave069",
+        "empid": "emp12364",
+        "leave_type": "sick",
+        "leave_start_date": "2025-11-01",
+        "leave_end_date": "2025-11-02",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave070",
+        "empid": "emp12364",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-16",
+        "leave_end_date": "2025-07-21",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave071",
+        "empid": "emp12364",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-30",
+        "leave_end_date": "2026-01-03",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave072",
+        "empid": "emp12356",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-26",
+        "leave_end_date": "2025-11-30",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave073",
+        "empid": "emp12361",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-04-10",
+        "leave_end_date": "2025-04-11",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave074",
+        "empid": "emp12368",
+        "leave_type": "personal",
+        "leave_start_date": "2025-05-11",
+        "leave_end_date": "2025-05-12",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave075",
+        "empid": "emp12350",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-03",
+        "leave_end_date": "2025-12-07",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave076",
+        "empid": "emp12353",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-05",
+        "leave_end_date": "2025-02-09",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave077",
+        "empid": "emp12373",
+        "leave_type": "sick",
+        "leave_start_date": "2025-04-21",
+        "leave_end_date": "2025-04-22",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave078",
+        "empid": "emp12368",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-08",
+        "leave_end_date": "2025-11-13",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave079",
+        "empid": "emp12356",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-10-09",
+        "leave_end_date": "2025-10-11",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave080",
+        "empid": "emp12374",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-31",
+        "leave_end_date": "2025-02-02",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave081",
+        "empid": "emp12370",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-24",
+        "leave_end_date": "2025-05-28",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave082",
+        "empid": "emp12358",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-04-14",
+        "leave_end_date": "2025-04-17",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave083",
+        "empid": "emp12356",
+        "leave_type": "personal",
+        "leave_start_date": "2025-05-23",
+        "leave_end_date": "2025-05-24",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave084",
+        "empid": "emp12358",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-25",
+        "leave_end_date": "2025-07-28",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave085",
+        "empid": "emp12362",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-10",
+        "leave_end_date": "2025-07-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave086",
+        "empid": "emp12367",
+        "leave_type": "personal",
+        "leave_start_date": "2025-03-21",
+        "leave_end_date": "2025-03-24",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave087",
+        "empid": "emp12362",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-14",
+        "leave_end_date": "2025-05-19",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave088",
+        "empid": "emp12359",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-17",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave089",
+        "empid": "emp12351",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-10-21",
+        "leave_end_date": "2025-10-24",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave090",
+        "empid": "emp12374",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-25",
+        "leave_end_date": "2025-05-30",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave091",
+        "empid": "emp12369",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-02-16",
+        "leave_end_date": "2025-02-17",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave092",
+        "empid": "emp12373",
+        "leave_type": "personal",
+        "leave_start_date": "2025-03-18",
+        "leave_end_date": "2025-03-22",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave093",
+        "empid": "emp12353",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-14",
+        "leave_end_date": "2025-11-16",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave094",
+        "empid": "emp12364",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-22",
+        "leave_end_date": "2025-06-24",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave095",
+        "empid": "emp12357",
+        "leave_type": "personal",
+        "leave_start_date": "2025-06-10",
+        "leave_end_date": "2025-06-15",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave096",
+        "empid": "emp12361",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-06",
+        "leave_end_date": "2025-11-08",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave097",
+        "empid": "emp12373",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-08",
+        "leave_end_date": "2025-04-11",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave098",
+        "empid": "emp12351",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-20",
+        "leave_end_date": "2025-01-22",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave099",
+        "empid": "emp12346",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-03",
+        "leave_end_date": "2025-11-06",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave100",
+        "empid": "emp12354",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-04",
+        "leave_end_date": "2025-11-08",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave101",
+        "empid": "emp12362",
+        "leave_type": "personal",
+        "leave_start_date": "2025-05-31",
+        "leave_end_date": "2025-06-02",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave102",
+        "empid": "emp12359",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-04-03",
+        "leave_end_date": "2025-04-06",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave103",
+        "empid": "emp12350",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-06-21",
+        "leave_end_date": "2025-06-22",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave104",
+        "empid": "emp12347",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-16",
+        "leave_end_date": "2025-07-20",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave105",
+        "empid": "emp12365",
+        "leave_type": "sick",
+        "leave_start_date": "2025-10-28",
+        "leave_end_date": "2025-11-01",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave106",
+        "empid": "emp12363",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-07",
+        "leave_end_date": "2025-01-08",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave107",
+        "empid": "emp12372",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-09",
+        "leave_end_date": "2025-07-11",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave108",
+        "empid": "emp12366",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-20",
+        "leave_end_date": "2025-01-23",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave109",
+        "empid": "emp12368",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-09",
+        "leave_end_date": "2025-05-11",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave110",
+        "empid": "emp12359",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-06-26",
+        "leave_end_date": "2025-07-01",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave111",
+        "empid": "emp12352",
+        "leave_type": "sick",
+        "leave_start_date": "2025-08-21",
+        "leave_end_date": "2025-08-25",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave112",
+        "empid": "emp12361",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-06",
+        "leave_end_date": "2025-12-08",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave113",
+        "empid": "emp12354",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-28",
+        "leave_end_date": "2025-01-31",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave114",
+        "empid": "emp12367",
+        "leave_type": "sick",
+        "leave_start_date": "2025-03-10",
+        "leave_end_date": "2025-03-14",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave115",
+        "empid": "emp12358",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-17",
+        "leave_end_date": "2025-01-18",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave116",
+        "empid": "emp12362",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-02-21",
+        "leave_end_date": "2025-02-26",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave117",
+        "empid": "emp12347",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-08",
+        "leave_end_date": "2025-07-10",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave118",
+        "empid": "emp12357",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-15",
+        "leave_end_date": "2025-01-18",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave119",
+        "empid": "emp12361",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-06-17",
+        "leave_end_date": "2025-06-18",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave120",
+        "empid": "emp12352",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-30",
+        "leave_end_date": "2025-12-31",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave121",
+        "empid": "emp12366",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-09",
+        "leave_end_date": "2025-09-11",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave122",
+        "empid": "emp12371",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-29",
+        "leave_end_date": "2025-12-30",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave123",
+        "empid": "emp12363",
+        "leave_type": "sick",
+        "leave_start_date": "2025-09-01",
+        "leave_end_date": "2025-09-02",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave124",
+        "empid": "emp12355",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-12",
+        "leave_end_date": "2025-07-16",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave125",
+        "empid": "emp12349",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-27",
+        "leave_end_date": "2025-07-30",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave126",
+        "empid": "emp12348",
+        "leave_type": "personal",
+        "leave_start_date": "2025-06-14",
+        "leave_end_date": "2025-06-17",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave127",
+        "empid": "emp12358",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-11",
+        "leave_end_date": "2025-02-14",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave128",
+        "empid": "emp12349",
+        "leave_type": "sick",
+        "leave_start_date": "2025-09-03",
+        "leave_end_date": "2025-09-07",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave129",
+        "empid": "emp12347",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-18",
+        "leave_end_date": "2025-01-22",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave130",
+        "empid": "emp12356",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-22",
+        "leave_end_date": "2025-01-24",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave131",
+        "empid": "emp12374",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-07",
+        "leave_end_date": "2025-11-09",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave132",
+        "empid": "emp12352",
+        "leave_type": "personal",
+        "leave_start_date": "2025-02-26",
+        "leave_end_date": "2025-03-02",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave133",
+        "empid": "emp12373",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-12",
+        "leave_end_date": "2025-05-15",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave134",
+        "empid": "emp12368",
+        "leave_type": "sick",
+        "leave_start_date": "2025-11-03",
+        "leave_end_date": "2025-11-07",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave135",
+        "empid": "emp12360",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-20",
+        "leave_end_date": "2025-01-23",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave136",
+        "empid": "emp12351",
+        "leave_type": "sick",
+        "leave_start_date": "2025-11-27",
+        "leave_end_date": "2025-11-30",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave137",
+        "empid": "emp12359",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-23",
+        "leave_end_date": "2025-06-27",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave138",
+        "empid": "emp12370",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-04",
+        "leave_end_date": "2025-12-08",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave139",
+        "empid": "emp12347",
+        "leave_type": "sick",
+        "leave_start_date": "2025-07-31",
+        "leave_end_date": "2025-08-04",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave140",
+        "empid": "emp12357",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-23",
+        "leave_end_date": "2025-09-24",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave141",
+        "empid": "emp12346",
+        "leave_type": "personal",
+        "leave_start_date": "2025-08-17",
+        "leave_end_date": "2025-08-20",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave142",
+        "empid": "emp12370",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-17",
+        "leave_end_date": "2025-07-20",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave143",
+        "empid": "emp12362",
+        "leave_type": "personal",
+        "leave_start_date": "2025-07-17",
+        "leave_end_date": "2025-07-21",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave144",
+        "empid": "emp12347",
+        "leave_type": "sick",
+        "leave_start_date": "2025-03-17",
+        "leave_end_date": "2025-03-18",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave145",
+        "empid": "emp12347",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-27",
+        "leave_end_date": "2025-01-31",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave146",
+        "empid": "emp12351",
+        "leave_type": "sick",
+        "leave_start_date": "2025-04-18",
+        "leave_end_date": "2025-04-23",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave147",
+        "empid": "emp12354",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-04-29",
+        "leave_end_date": "2025-05-01",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave148",
+        "empid": "emp12373",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-02-01",
+        "leave_end_date": "2025-02-06",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave149",
+        "empid": "emp12349",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-02",
+        "leave_end_date": "2025-08-05",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave150",
+        "empid": "emp12357",
+        "leave_type": "personal",
+        "leave_start_date": "2025-06-28",
+        "leave_end_date": "2025-06-29",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave151",
+        "empid": "emp12364",
+        "leave_type": "sick",
+        "leave_start_date": "2025-12-17",
+        "leave_end_date": "2025-12-18",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave152",
+        "empid": "emp12352",
+        "leave_type": "personal",
+        "leave_start_date": "2025-03-17",
+        "leave_end_date": "2025-03-18",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave153",
+        "empid": "emp12373",
+        "leave_type": "sick",
+        "leave_start_date": "2025-09-23",
+        "leave_end_date": "2025-09-26",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave154",
+        "empid": "emp12348",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-08",
+        "leave_end_date": "2025-04-09",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave155",
+        "empid": "emp12367",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-26",
+        "leave_end_date": "2025-01-27",
+        "number_of_days": "2",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave156",
+        "empid": "emp12348",
+        "leave_type": "personal",
+        "leave_start_date": "2025-06-01",
+        "leave_end_date": "2025-06-06",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave157",
+        "empid": "emp12360",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-02-19",
+        "leave_end_date": "2025-02-22",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave158",
+        "empid": "emp12358",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-18",
+        "leave_end_date": "2025-07-21",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave159",
+        "empid": "emp12373",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-18",
+        "leave_end_date": "2025-09-20",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave160",
+        "empid": "emp12371",
+        "leave_type": "personal",
+        "leave_start_date": "2025-11-27",
+        "leave_end_date": "2025-11-28",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave161",
+        "empid": "emp12367",
+        "leave_type": "personal",
+        "leave_start_date": "2025-10-06",
+        "leave_end_date": "2025-10-11",
+        "number_of_days": "6",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave162",
+        "empid": "emp12347",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-21",
+        "leave_end_date": "2025-06-23",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave163",
+        "empid": "emp12346",
+        "leave_type": "personal",
+        "leave_start_date": "2025-05-14",
+        "leave_end_date": "2025-05-17",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave164",
+        "empid": "emp12349",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-10",
+        "leave_end_date": "2025-04-14",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave165",
+        "empid": "emp12359",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-10-15",
+        "leave_end_date": "2025-10-16",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave166",
+        "empid": "emp12348",
+        "leave_type": "sick",
+        "leave_start_date": "2025-01-24",
+        "leave_end_date": "2025-01-28",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave167",
+        "empid": "emp12347",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-03-12",
+        "leave_end_date": "2025-03-15",
+        "number_of_days": "4",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave168",
+        "empid": "emp12352",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-09-20",
+        "leave_end_date": "2025-09-22",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave169",
+        "empid": "emp12352",
+        "leave_type": "sick",
+        "leave_start_date": "2025-12-04",
+        "leave_end_date": "2025-12-07",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave170",
+        "empid": "emp12348",
+        "leave_type": "sick",
+        "leave_start_date": "2025-08-24",
+        "leave_end_date": "2025-08-28",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave171",
+        "empid": "emp12371",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-04",
+        "leave_end_date": "2025-01-07",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave172",
+        "empid": "emp12357",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-06-20",
+        "leave_end_date": "2025-06-24",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave173",
+        "empid": "emp12367",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-14",
+        "leave_end_date": "2025-01-18",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave174",
+        "empid": "emp12355",
+        "leave_type": "sick",
+        "leave_start_date": "2025-10-17",
+        "leave_end_date": "2025-10-22",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave175",
+        "empid": "emp12370",
+        "leave_type": "personal",
+        "leave_start_date": "2025-05-04",
+        "leave_end_date": "2025-05-06",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave176",
+        "empid": "emp12351",
+        "leave_type": "personal",
+        "leave_start_date": "2025-05-31",
+        "leave_end_date": "2025-06-03",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave177",
+        "empid": "emp12360",
+        "leave_type": "sick",
+        "leave_start_date": "2025-03-30",
+        "leave_end_date": "2025-03-31",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave178",
+        "empid": "emp12371",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-11-17",
+        "leave_end_date": "2025-11-18",
+        "number_of_days": "2",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave179",
+        "empid": "emp12361",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-04",
+        "leave_end_date": "2025-09-08",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave180",
+        "empid": "emp12371",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-29",
+        "leave_end_date": "2025-12-31",
+        "number_of_days": "3",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave181",
+        "empid": "emp12365",
+        "leave_type": "sick",
+        "leave_start_date": "2025-06-28",
+        "leave_end_date": "2025-07-03",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave182",
+        "empid": "emp12357",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-04",
+        "leave_end_date": "2025-09-09",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave183",
+        "empid": "emp12364",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-05-31",
+        "leave_end_date": "2025-06-04",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave184",
+        "empid": "emp12371",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-30",
+        "leave_end_date": "2025-02-03",
+        "number_of_days": "5",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave185",
+        "empid": "emp12363",
+        "leave_type": "sick",
+        "leave_start_date": "2025-05-26",
+        "leave_end_date": "2025-05-30",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave186",
+        "empid": "emp12345",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-12-15",
+        "leave_end_date": "2025-12-17",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave187",
+        "empid": "emp12367",
+        "leave_type": "sick",
+        "leave_start_date": "2025-11-26",
+        "leave_end_date": "2025-12-01",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave188",
+        "empid": "emp12353",
+        "leave_type": "personal",
+        "leave_start_date": "2025-04-21",
+        "leave_end_date": "2025-04-23",
+        "number_of_days": "3",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave189",
+        "empid": "emp12362",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-07-14",
+        "leave_end_date": "2025-07-19",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave190",
+        "empid": "emp12353",
+        "leave_type": "personal",
+        "leave_start_date": "2025-06-28",
+        "leave_end_date": "2025-07-02",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave191",
+        "empid": "emp12364",
+        "leave_type": "sick",
+        "leave_start_date": "2025-08-09",
+        "leave_end_date": "2025-08-12",
+        "number_of_days": "4",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave192",
+        "empid": "emp12369",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-01",
+        "leave_end_date": "2025-01-05",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave193",
+        "empid": "emp12368",
+        "leave_type": "sick",
+        "leave_start_date": "2025-10-30",
+        "leave_end_date": "2025-11-01",
+        "number_of_days": "3",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave194",
+        "empid": "emp12350",
+        "leave_type": "sick",
+        "leave_start_date": "2025-12-11",
+        "leave_end_date": "2025-12-12",
+        "number_of_days": "2",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave195",
+        "empid": "emp12359",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-25",
+        "leave_end_date": "2025-01-29",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave196",
+        "empid": "emp12358",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-19",
+        "leave_end_date": "2025-08-22",
+        "number_of_days": "4",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave197",
+        "empid": "emp12349",
+        "leave_type": "personal",
+        "leave_start_date": "2025-12-19",
+        "leave_end_date": "2025-12-24",
+        "number_of_days": "6",
+        "leave_status": "pending"
+    },
+    {
+        "id": "leave198",
+        "empid": "emp12362",
+        "leave_type": "personal",
+        "leave_start_date": "2025-01-24",
+        "leave_end_date": "2025-01-28",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave199",
+        "empid": "emp12374",
+        "leave_type": "personal",
+        "leave_start_date": "2025-09-20",
+        "leave_end_date": "2025-09-25",
+        "number_of_days": "6",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave200",
+        "empid": "emp12365",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-12-04",
+        "leave_end_date": "2025-12-08",
+        "number_of_days": "5",
+        "leave_status": "denied"
+    },
+    {
+        "id": "leave201",
+        "empid": "emp12351",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave202",
+        "empid": "emp12353",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave203",
+        "empid": "emp12345",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave204",
+        "empid": "emp12350",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave205",
+        "empid": "emp12363",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave206",
+        "empid": "emp12374",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave207",
+        "empid": "emp12361",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave208",
+        "empid": "emp12371",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave209",
+        "empid": "emp12361",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave210",
+        "empid": "emp12352",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-01-10",
+        "leave_end_date": "2025-01-14",
+        "number_of_days": "5",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave211",
+        "empid": "emp12354",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave212",
+        "empid": "emp12361",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave213",
+        "empid": "emp12364",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave214",
+        "empid": "emp12365",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave215",
+        "empid": "emp12350",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave216",
+        "empid": "emp12367",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave217",
+        "empid": "emp12356",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave218",
+        "empid": "emp12373",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave219",
+        "empid": "emp12362",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    },
+    {
+        "id": "leave220",
+        "empid": "emp12374",
+        "leave_type": "vacation",
+        "leave_start_date": "2025-08-15",
+        "leave_end_date": "2025-08-21",
+        "number_of_days": "7",
+        "leave_status": "approved"
+    }
+],
+"families":[
+    {
+        "id": "fam001",
+        "empid": "emp12345",
+        "relation": "Father",
+        "name": "Robert Doe",
+        "age": "55",
+        "occupation": "Engineer",
+        "contact": "123-456-7890"
+    },
+    {
+        "id": "fam002",
+        "empid": "emp12345",
+        "relation": "Mother",
+        "name": "Jane Doe",
+        "age": "50",
+        "occupation": "Teacher",
+        "contact": "123-456-7891"
+    },
+    {
+        "id": "fam003",
+        "empid": "emp12346",
+        "relation": "Father",
+        "name": "Mark Smith",
+        "age": "58",
+        "occupation": "Doctor",
+        "contact": "987-654-3210"
+    },
+    {
+        "id": "fam004",
+        "empid": "emp12346",
+        "relation": "Mother",
+        "name": "Lisa Smith",
+        "age": "52",
+        "occupation": "Nurse",
+        "contact": "987-654-3211"
+    },
+    {
+        "id": "fam005",
+        "empid": "emp12347",
+        "relation": "Father",
+        "name": "Richard Brown",
+        "age": "60",
+        "occupation": "Architect",
+        "contact": "555-555-5555"
+    },
+    {
+        "id": "fam006",
+        "empid": "emp12347",
+        "relation": "Mother",
+        "name": "Patricia Brown",
+        "age": "57",
+        "occupation": "Designer",
+        "contact": "555-555-5556"
+    },
+    {
+        "id": "fam007",
+        "empid": "emp12347",
+        "relation": "Sister",
+        "name": "Emily Brown",
+        "age": "30",
+        "occupation": "Teacher",
+        "contact": "555-555-5557"
+    },
+    {
+        "id": "fam008",
+        "empid": "emp12348",
+        "relation": "Husband",
+        "name": "Michael Davis",
+        "age": "30",
+        "occupation": "Software Developer",
+        "contact": "333-333-3333"
+    },
+    {
+        "id": "fam009",
+        "empid": "emp12348",
+        "relation": "Wife",
+        "name": "Anna Davis",
+        "age": "28",
+        "occupation": "Graphic Designer",
+        "contact": "333-333-3334"
+    },
+    {
+        "id": "fam010",
+        "empid": "emp12349",
+        "relation": "Wife",
+        "name": "Emma Wilson",
+        "age": "28",
+        "occupation": "Graphic Designer",
+        "contact": "444-444-4444"
+    },
+    {
+        "id": "fam011",
+        "empid": "emp12349",
+        "relation": "Father",
+        "name": "David Wilson",
+        "age": "60",
+        "occupation": "Retired",
+        "contact": "444-444-4445"
+    },
+    {
+        "id": "fam012",
+        "empid": "emp12350",
+        "relation": "Father",
+        "name": "William Taylor",
+        "age": "65",
+        "occupation": "Professor",
+        "contact": "222-222-2222"
+    },
+    {
+        "id": "fam013",
+        "empid": "emp12350",
+        "relation": "Mother",
+        "name": "Susan Taylor",
+        "age": "63",
+        "occupation": "Artist",
+        "contact": "222-222-2223"
+    },
+    {
+        "id": "fam014",
+        "empid": "emp12351",
+        "relation": "Father",
+        "name": "James Anderson",
+        "age": "58",
+        "occupation": "Construction Worker",
+        "contact": "555-555-5557"
+    },
+    {
+        "id": "fam015",
+        "empid": "emp12351",
+        "relation": "Mother",
+        "name": "Marie Anderson",
+        "age": "55",
+        "occupation": "Chef",
+        "contact": "555-555-5558"
+    },
+    {
+        "id": "fam016",
+        "empid": "emp12351",
+        "relation": "Sister",
+        "name": "Olivia Anderson",
+        "age": "30",
+        "occupation": "Doctor",
+        "contact": "555-555-5559"
+    },
+    {
+        "id": "fam017",
+        "empid": "emp12352",
+        "relation": "Father",
+        "name": "Thomas Thomas",
+        "age": "60",
+        "occupation": "Engineer",
+        "contact": "111-111-1111"
+    },
+    {
+        "id": "fam018",
+        "empid": "emp12352",
+        "relation": "Mother",
+        "name": "Amy Thomas",
+        "age": "58",
+        "occupation": "Doctor",
+        "contact": "111-111-1112"
+    },
+    {
+        "id": "fam019",
+        "empid": "emp12352",
+        "relation": "Brother",
+        "name": "Chris Thomas",
+        "age": "32",
+        "occupation": "Designer",
+        "contact": "111-111-1113"
+    },
+    {
+        "id": "fam020",
+        "empid": "emp12353",
+        "relation": "Wife",
+        "name": "Olivia Jackson",
+        "age": "27",
+        "occupation": "Teacher",
+        "contact": "666-666-6666"
+    },
+    {
+        "id": "fam021",
+        "empid": "emp12353",
+        "relation": "Father",
+        "name": "David Jackson",
+        "age": "63",
+        "occupation": "Carpenter",
+        "contact": "666-666-6667"
+    },
+    {
+        "id": "fam022",
+        "empid": "emp12353",
+        "relation": "Mother",
+        "name": "Laura Jackson",
+        "age": "60",
+        "occupation": "Artist",
+        "contact": "666-666-6668"
+    },
+    {
+        "id": "fam023",
+        "empid": "emp12354",
+        "relation": "Husband",
+        "name": "Christopher White",
+        "age": "33",
+        "occupation": "Marketing Specialist",
+        "contact": "777-777-7777"
+    },
+    {
+        "id": "fam024",
+        "empid": "emp12354",
+        "relation": "Wife",
+        "name": "Sophia White",
+        "age": "30",
+        "occupation": "Graphic Designer",
+        "contact": "777-777-7778"
+    },
+    {
+        "id": "fam025",
+        "empid": "emp12354",
+        "relation": "Father",
+        "name": "George White",
+        "age": "65",
+        "occupation": "Retired",
+        "contact": "777-777-7779"
+    },
+    {
+        "id": "fam026",
+        "empid": "emp12355",
+        "relation": "Father",
+        "name": "George Harris",
+        "age": "62",
+        "occupation": "Doctor",
+        "contact": "888-888-8888"
+    },
+    {
+        "id": "fam027",
+        "empid": "emp12355",
+        "relation": "Mother",
+        "name": "Emma Harris",
+        "age": "58",
+        "occupation": "Lawyer",
+        "contact": "888-888-8889"
+    },
+    {
+        "id": "fam028",
+        "empid": "emp12355",
+        "relation": "Sister",
+        "name": "Lily Harris",
+        "age": "29",
+        "occupation": "Consultant",
+        "contact": "888-888-8890"
+    },
+    {
+        "id": "fam029",
+        "empid": "emp12356",
+        "relation": "Father",
+        "name": "James Lee",
+        "age": "59",
+        "occupation": "Chef",
+        "contact": "999-999-9999"
+    },
+    {
+        "id": "fam030",
+        "empid": "emp12356",
+        "relation": "Mother",
+        "name": "Susan Lee",
+        "age": "55",
+        "occupation": "Artist",
+        "contact": "999-999-9990"
+    },
+    {
+        "id": "fam031",
+        "empid": "emp12357",
+        "relation": "Father",
+        "name": "Mark Clark",
+        "age": "64",
+        "occupation": "Retired",
+        "contact": "555-777-8889"
+    },
+    {
+        "id": "fam032",
+        "empid": "emp12357",
+        "relation": "Mother",
+        "name": "Patricia Clark",
+        "age": "60",
+        "occupation": "Scientist",
+        "contact": "555-777-8880"
+    },
+    {
+        "id": "fam033",
+        "empid": "emp12357",
+        "relation": "Sister",
+        "name": "Rebecca Clark",
+        "age": "34",
+        "occupation": "Teacher",
+        "contact": "555-777-8881"
+    },
+    {
+        "id": "fam034",
+        "empid": "emp12358",
+        "relation": "Father",
+        "name": "Robert Harris",
+        "age": "66",
+        "occupation": "Engineer",
+        "contact": "777-555-3333"
+    },
+    {
+        "id": "fam035",
+        "empid": "emp12358",
+        "relation": "Mother",
+        "name": "Julia Harris",
+        "age": "62",
+        "occupation": "Teacher",
+        "contact": "777-555-3334"
+    },
+    {
+        "id": "fam036",
+        "empid": "emp12358",
+        "relation": "Brother",
+        "name": "Lucas Harris",
+        "age": "33",
+        "occupation": "Software Developer",
+        "contact": "777-555-3335"
+    },
+    {
+        "id": "fam037",
+        "empid": "emp12359",
+        "relation": "Father",
+        "name": "John Walker",
+        "age": "67",
+        "occupation": "Architect",
+        "contact": "444-222-8889"
+    },
+    {
+        "id": "fam038",
+        "empid": "emp12359",
+        "relation": "Mother",
+        "name": "Jessica Walker",
+        "age": "63",
+        "occupation": "Writer",
+        "contact": "444-222-8888"
+    },
+    {
+        "id": "fam039",
+        "empid": "emp12359",
+        "relation": "Sister",
+        "name": "Emily Walker",
+        "age": "30",
+        "occupation": "Photographer",
+        "contact": "444-222-8887"
+    },
+    {
+        "id": "fam040",
+        "empid": "emp12360",
+        "relation": "Father",
+        "name": "Samuel Young",
+        "age": "61",
+        "occupation": "Mechanic",
+        "contact": "555-666-4445"
+    },
+    {
+        "id": "fam041",
+        "empid": "emp12360",
+        "relation": "Mother",
+        "name": "Anna Young",
+        "age": "59",
+        "occupation": "Doctor",
+        "contact": "555-666-4446"
+    },
+    {
+        "id": "fam042",
+        "empid": "emp12360",
+        "relation": "Brother",
+        "name": "Ethan Young",
+        "age": "25",
+        "occupation": "Teacher",
+        "contact": "555-666-4447"
+    },
+    {
+        "id": "fam043",
+        "empid": "emp12361",
+        "relation": "Father",
+        "name": "John King",
+        "age": "65",
+        "occupation": "Consultant",
+        "contact": "777-888-9999"
+    },
+    {
+        "id": "fam044",
+        "empid": "emp12361",
+        "relation": "Mother",
+        "name": "Emily King",
+        "age": "60",
+        "occupation": "Teacher",
+        "contact": "777-888-9990"
+    },
+    {
+        "id": "fam045",
+        "empid": "emp12361",
+        "relation": "Brother",
+        "name": "Michael King",
+        "age": "32",
+        "occupation": "Artist",
+        "contact": "777-888-9991"
+    },
+    {
+        "id": "fam046",
+        "empid": "emp12362",
+        "relation": "Father",
+        "name": "Robert Scott",
+        "age": "62",
+        "occupation": "Doctor",
+        "contact": "444-333-2222"
+    },
+    {
+        "id": "fam047",
+        "empid": "emp12362",
+        "relation": "Mother",
+        "name": "Linda Scott",
+        "age": "58",
+        "occupation": "Engineer",
+        "contact": "444-333-2223"
+    },
+    {
+        "id": "fam048",
+        "empid": "emp12362",
+        "relation": "Sister",
+        "name": "Carol Scott",
+        "age": "33",
+        "occupation": "Photographer",
+        "contact": "444-333-2224"
+    },
+    {
+        "id": "fam049",
+        "empid": "emp12363",
+        "relation": "Father",
+        "name": "Charles Green",
+        "age": "60",
+        "occupation": "Architect",
+        "contact": "111-222-3333"
+    },
+    {
+        "id": "fam050",
+        "empid": "emp12363",
+        "relation": "Mother",
+        "name": "Grace Green",
+        "age": "58",
+        "occupation": "Scientist",
+        "contact": "111-222-3334"
+    },
+    {
+        "id": "fam051",
+        "empid": "emp12363",
+        "relation": "Sister",
+        "name": "Lily Green",
+        "age": "30",
+        "occupation": "Designer",
+        "contact": "111-222-3335"
+    },
+    {
+        "id": "fam052",
+        "empid": "emp12364",
+        "relation": "Father",
+        "name": "Paul Blue",
+        "age": "64",
+        "occupation": "Engineer",
+        "contact": "777-666-5555"
+    },
+    {
+        "id": "fam053",
+        "empid": "emp12364",
+        "relation": "Mother",
+        "name": "Linda Blue",
+        "age": "60",
+        "occupation": "Teacher",
+        "contact": "777-666-5556"
+    },
+    {
+        "id": "fam054",
+        "empid": "emp12364",
+        "relation": "Sister",
+        "name": "Olivia Blue",
+        "age": "32",
+        "occupation": "Chef",
+        "contact": "777-666-5557"
+    },
+    {
+        "id": "fam055",
+        "empid": "emp12365",
+        "relation": "Father",
+        "name": "Steven Brown",
+        "age": "63",
+        "occupation": "Doctor",
+        "contact": "444-777-5555"
+    },
+    {
+        "id": "fam056",
+        "empid": "emp12365",
+        "relation": "Mother",
+        "name": "Monica Brown",
+        "age": "60",
+        "occupation": "Artist",
+        "contact": "444-777-5556"
+    },
+    {
+        "id": "fam057",
+        "empid": "emp12365",
+        "relation": "Sister",
+        "name": "Rachel Brown",
+        "age": "29",
+        "occupation": "Consultant",
+        "contact": "444-777-5557"
+    },
+    {
+        "id": "fam058",
+        "empid": "emp12366",
+        "relation": "Father",
+        "name": "David White",
+        "age": "65",
+        "occupation": "Consultant",
+        "contact": "333-444-5555"
+    },
+    {
+        "id": "fam059",
+        "empid": "emp12366",
+        "relation": "Mother",
+        "name": "Eliza White",
+        "age": "63",
+        "occupation": "Writer",
+        "contact": "333-444-5556"
+    },
+    {
+        "id": "fam060",
+        "empid": "emp12366",
+        "relation": "Sister",
+        "name": "Jessica White",
+        "age": "28",
+        "occupation": "Engineer",
+        "contact": "333-444-5557"
+    }
+]
+}

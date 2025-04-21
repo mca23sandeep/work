@@ -1,0 +1,474 @@
+STEP: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1.
+	PUT /_enrich/policy/departments_policy
+
+	{
+	  "match": {
+		"indices": "departments_data",
+		"match_field": "deptid",
+		"enrich_fields": ["deptname"]
+	  }
+	}
+ 2.
+   POST /_enrich/policy/departments_policy/_execute
+
+STEP: 2
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1.
+	PUT /_enrich/policy/salary_data_policy
+	{
+	  "match": {
+		"indices": "salary_data",
+		"match_field": "empid",
+		"enrich_fields": ["amount"]
+	  }
+	}
+
+ 2.
+   POST /_enrich/policy/salary_data_policy/_execute
+
+STEP: 3
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT /_enrich/policy/joining_dates_data_policy
+{
+  "match": {
+    "indices": "joining_dates_data",
+    "match_field": "empid",
+    "enrich_fields": ["joinDate"]
+  }
+}
+POST /_enrich/policy/joining_dates_data_policy/_execute
+
+STEP: 4
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT _enrich/policy/address_enrichment_policy
+{
+  "match": {
+    "indices": ["addresses_data"],
+    "match_field": "empid",
+    "enrich_fields": ["street", "city", "zipcode", "contact", "country", "state"]
+  }
+}
+
+POST /_enrich/policy/address_enrichment_policy/_execute
+STEP: 5
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT /leaves_data
+{
+  "mappings": {
+    "properties": {
+      "empid": {
+        "type": "keyword"
+      },
+      "leave_type": {
+        "type": "keyword"
+      },
+      "leave_start_date": {
+        "type": "keyword"
+      },
+      "leave_end_date": {
+        "type": "keyword"
+      },
+      "number_of_days": {
+        "type": "keyword"
+      },
+      "leave_status": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+
+POST /_reindex
+{
+  "source": {
+    "index": "leave_data"
+  },
+  "dest": {
+    "index": "leaves_data"
+  }
+}
+
+
+
+
+PUT _transform/leaves_data_aggregation
+{
+  "source": {
+    "index": "leaves_data"
+  },
+  "dest": {
+    "index": "leaves_aggregated"
+  },
+  "pivot": {
+    "group_by": {
+      "empid": {
+        "terms": {
+          "field": "empid"
+        }
+      }
+    },
+    "aggregations": {
+      "leaves": {
+        "scripted_metric": {
+          "init_script": "state.leaves = []",
+          "map_script": """
+            state.leaves.add([
+              'leave_type': doc['leave_type'].value,
+              'leave_start_date': doc['leave_start_date'].value,
+              'leave_end_date': doc['leave_end_date'].value,
+              'number_of_days': doc['number_of_days'].value,
+              'leave_status': doc['leave_status'].value
+            ])
+          """,
+          "combine_script": "return state.leaves",
+          "reduce_script": """
+            return states.stream()
+                         .flatMap(s -> s.stream())
+                         .collect(Collectors.toList());
+          """
+        }
+      }
+    }
+  }
+}
+
+
+POST _transform/leaves_data_aggregation/_start
+
+
+STEP: 6
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT /_enrich/policy/leaves_aggregated_policy
+{
+  "match": {
+    "indices": "leaves_aggregated",
+    "match_field": "empid",
+    "enrich_fields": ["leaves"]
+  }
+}
+
+POST /_enrich/policy/leaves_aggregated_policy/_execute
+
+STEP: 7
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT /employees_families_data
+{
+  "mappings": {
+    "properties": {
+      "empid": {
+        "type": "keyword"
+      },
+      "relation": {
+        "type": "keyword"
+      },
+      "leave_start_date": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "keyword"
+      },
+      "age": {
+        "type": "keyword"
+      },
+      "occupation": {
+        "type": "keyword"
+      },
+      "contact": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+POST /_reindex
+{
+  "source": {
+    "index": "families_data"
+  },
+  "dest": {
+    "index": "employees_families_data"
+  }
+}
+
+
+
+PUT _transform/families_data_aggregation
+{
+  "source": {
+    "index": "employees_families_data"
+  },
+  "dest": {
+    "index": "families_aggregated"
+  },
+  "pivot": {
+    "group_by": {
+      "empid": {
+        "terms": {
+          "field": "empid"
+        }
+      }
+    },
+    "aggregations": {
+      "family_members": {
+        "scripted_metric": {
+          "init_script": "state.family_members = []",
+          "map_script": """
+            state.family_members.add([
+              'relation': doc['relation'].value,
+              'name': doc['name'].value,
+              'age': doc['age'].value,
+              'occupation': doc['occupation'].value,
+              'contact': doc['contact'].value
+            ])
+          """,
+          "combine_script": "return state.family_members",
+          "reduce_script": """
+            return states.stream()
+                         .flatMap(s -> s.stream())
+                         .collect(Collectors.toList());
+          """
+        }
+      }
+    }
+  }
+}
+
+POST _transform/families_data_aggregation/_start
+
+
+
+GET /families_aggregated/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+
+STEP: 8
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+PUT /_enrich/policy/families_aggregated_policy
+{
+  "match": {
+    "indices": "families_aggregated",
+    "match_field": "empid",
+    "enrich_fields": ["family_members"]
+  }
+}
+
+POST /_enrich/policy/families_aggregated_policy/_execute
+
+STEP: 9
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT _ingest/pipeline/enrich_employee_data_pipeline
+{
+  "description": "Enrich orders with multiple address types",
+  "processors": [
+    {
+      "enrich": {
+        "policy_name": "address_enrichment_policy",
+        "field": "empid",
+        "target_field": "enriched_address"
+      }
+	  
+	  
+    },{
+      "enrich": {
+        "policy_name": "departments_policy",
+         "field": "deptid",
+        "target_field": "department"
+      }
+	  
+	  
+    },{
+      "enrich": {
+        "policy_name": "salary_data_policy",
+         "field": "empid",
+        "target_field": "salary"
+      }
+	  
+	  
+    },{
+      "enrich": {
+        "policy_name": "joining_dates_data_policy",
+         "field": "empid",
+        "target_field": "joining_date"
+      }
+	  
+	  
+    }
+	,{
+      "enrich": {
+        "policy_name": "leaves_aggregated_policy",
+        "field": "empid",
+        "target_field": "leaves_enriched"
+      }
+	  
+	  
+    }
+	,{
+      "enrich": {
+        "policy_name": "families_aggregated_policy",
+        "field": "empid",
+        "target_field": "families_enriched"
+      }
+	  
+	  
+    },{
+
+"script": {
+  "source": """
+    if (ctx.enriched_address != null) {
+        ctx.address = [];
+        if (ctx.enriched_address instanceof List) {
+            for (def enriched : ctx.enriched_address) {
+                ctx.address.add([
+                    'street': enriched.street,
+                    'city': enriched.city,
+                    'state': enriched.state,
+                    'zipcode': enriched.zipcode,
+                    'country': enriched.country,
+                    'contact': enriched.contact
+                ]);
+            }
+        } else {
+            ctx.address.add([
+                'street': ctx.enriched_address.street,
+                'city': ctx.enriched_address.city,
+                'state': ctx.enriched_address.state,
+                'zipcode': ctx.enriched_address.zipcode,
+                'country': ctx.enriched_address.country,
+                'contact': ctx.enriched_address.contact
+            ]);
+        }
+        ctx.remove('enriched_address');
+    }
+	
+	 if (ctx.leaves_enriched != null) {
+        ctx.leaves = ctx.leaves_enriched.leaves;
+       
+        ctx.remove('leaves_enriched');
+    }
+	if (ctx.families_enriched != null) {
+        ctx.families = ctx.families_enriched.family_members;
+        
+        ctx.remove('families_enriched');
+    }
+	
+	
+  """
+}
+
+
+    }
+  ]
+}
+
+STEP: 10
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+PUT /employees_aggregated_data
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "empid": { "type": "keyword" },
+      "empname": { "type": "text" },
+      "deptid": { "type": "keyword" },
+      "role": { "type": "keyword" },
+      "joinDate": { "type": "date" },
+      "addresses": {
+        "type": "nested",
+        "properties": {
+          "street": { "type": "text" },
+          "city": { "type": "text" },
+          "state": { "type": "keyword" },
+          "zipcode": { "type": "keyword" },
+          "contact": { "type": "text" },
+          "country": { "type": "keyword" }
+        }
+      },
+      "salary": {
+        "type": "nested",
+        "properties": {
+          "amount": { "type": "float" },
+          "role": { "type": "keyword" }
+        }
+      },
+      "leaves": {
+        "type": "nested",
+        "properties": {
+          "leave_type": { "type": "keyword" },
+          "leave_start_date": { "type": "date" },
+          "leave_end_date": { "type": "date" },
+          "number_of_days": { "type": "integer" },
+          "leave_status": { "type": "keyword" }
+        }
+      },
+      "families": {
+        "type": "nested",
+        "properties": {
+          "relation": { "type": "text" },
+          "name": { "type": "text" },
+          "age": { "type": "integer" },
+          "occupation": { "type": "text" },
+          "contact": { "type": "text" }
+        }
+      }
+    }
+  }
+}
+
+
+PUT /employees_aggregated_data/_settings
+{
+  "index": {
+    "default_pipeline": "enrich_employee_data_pipeline"
+  }
+}
+
+
+POST _reindex
+{
+  "source": {
+    "index": "employees_data"
+  },
+  "dest": {
+    "index": "employees_aggregated_data",
+    "pipeline": "enrich_employee_data_pipeline"
+  }
+}
+
+
+*************************************************************
+
+PUT _transform/employees_data_enriched_transform
+{
+  "source": {
+    "index": "employees_data"
+  },
+  "dest": {
+    "index": "employees_latest_data"
+  },
+  "sync": {
+    "time": {
+      "field": "timestamp",
+      "delay": "60s"
+    }
+  },
+  "latest": {
+    "unique_key": ["empid"],
+    "sort": "empid"
+  }
+}

@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "d42d203d-96cc-4608-9c10-3a790fd1330d",
+		"name": "elasticsearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33140462"
+	},
+	"item": [
+		{
+			"name": "EmployeesOnSpecificStates defaultSearch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"defaultSearch\":false,\r\n  \"joinDateStart\": \"2018-01-01\",\r\n  \"joinDateEnd\": \"2025-01-01\",\r\n  \"states\": [\"New Jersey\", \"Texas\", \"Florida\"],\r\n  \"salaryMin\": 70000.0,\r\n  \"salaryMax\": 100000.0,\r\n  \"leaveType\": \"sick\",\r\n  \"minimumSickLeaves\": 3,\r\n  \"leaveStartDate\": \"2025-01-01\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/getEmployeesOnSpecificStates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"getEmployeesOnSpecificStates"
+					]
+				},
+				"description": "elasticsearch "
+			},
+			"response": []
+		},
+		{
+			"name": "EmployeesOnSpecificStates without defaultSearch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"defaultSearch\":true,\r\n  \"joinDateStart\": \"2018-01-01\",\r\n  \"joinDateEnd\": \"2025-01-01\",\r\n  \"states\": [\"New Jersey\", \"Texas\", \"Florida\"],\r\n  \"salaryMin\": 70000.0,\r\n  \"salaryMax\": 100000.0,\r\n  \"leaveType\": \"sick\",\r\n  \"minimumSickLeaves\": 3,\r\n  \"leaveStartDate\": \"2025-01-01\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/getEmployeesOnSpecificStates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"getEmployeesOnSpecificStates"
+					]
+				},
+				"description": "elasticsearch "
+			},
+			"response": []
+		}
+	]
+}

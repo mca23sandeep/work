@@ -1,0 +1,29 @@
+
+
+1. Employees who:
+Joined in the last 6 months
+AND
+(Live in 'California' OR 'Texas' OR 'Florida')
+AND
+(Have a salary between $70,000 and $100,000 OR Have taken more than 3 sick leaves in the last year)
+
+2. Employees who:
+Have taken vacation leave in the last quarter
+AND 
+(Do NOT live in the 'USA' OR Live in 'Canada')
+AND 
+(Have a salary greater than $80,000 OR Have taken a sick leave longer than 7 days in the current year)
+
+3. Employees who:
+Joined between January 1st and March 31st of the current year
+AND 
+(Live in a city that starts with 'San' OR Live in a city that ends with 'ton')
+AND 
+(Have a salary within the top 10% of all employee salaries OR Have never taken any leave)
+
+4.Employees who:
+    Took leave in both January and August 2025.
+
+ 
+5.Employees who:
+Name contains this phrase "rt bro" or "thew a"

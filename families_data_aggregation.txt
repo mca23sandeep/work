@@ -1,0 +1,93 @@
+PUT /employees_families_data
+{
+  "mappings": {
+    "properties": {
+      "empid": {
+        "type": "keyword"
+      },
+      "relation": {
+        "type": "keyword"
+      },
+      "leave_start_date": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "keyword"
+      },
+      "age": {
+        "type": "keyword"
+      },
+      "occupation": {
+        "type": "keyword"
+      },
+      "contact": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+POST /_reindex
+{
+  "source": {
+    "index": "families_data"
+  },
+  "dest": {
+    "index": "employees_families_data"
+  }
+}
+
+
+
+PUT _transform/families_data_aggregation
+{
+  "source": {
+    "index": "employees_families_data"
+  },
+  "dest": {
+    "index": "families_aggregated"
+  },
+  "pivot": {
+    "group_by": {
+      "empid": {
+        "terms": {
+          "field": "empid"
+        }
+      }
+    },
+    "aggregations": {
+      "family_members": {
+        "scripted_metric": {
+          "init_script": "state.family_members = []",
+          "map_script": """
+            state.family_members.add([
+              'relation': doc['relation'].value,
+              'name': doc['name'].value,
+              'age': doc['age'].value,
+              'occupation': doc['occupation'].value,
+              'contact': doc['contact'].value
+            ])
+          """,
+          "combine_script": "return state.family_members",
+          "reduce_script": """
+            return states.stream()
+                         .flatMap(s -> s.stream())
+                         .collect(Collectors.toList());
+          """
+        }
+      }
+    }
+  }
+}
+
+POST _transform/families_data_aggregation/_start
+
+
+
+GET /families_aggregated/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
