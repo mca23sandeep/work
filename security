@@ -1,0 +1,76 @@
+xpack.security.enabled: true
+
+
+PUT /_security/user/john
+{
+  "password": "password123",
+  "roles": [ "employee_role" ],
+  "full_name": "John Doe",
+  "email": "john.doe@example.com"
+ 
+}
+
+
+1. Row-Level Security
+++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT /_security/role/employee_role
+{
+  "indices": [
+    {
+      "names": [ "employees" ],
+      "privileges": [ "read" ],
+      "query": {
+        "term": { "department": "sales" }
+      }
+    }
+  ]
+}
+
+
+PUT /_security/user/john
+{
+  "password": "password123",
+  "roles": [ "employee_role" ]
+}
+
+
+2. Field-Level Security
+++++++++++++++++++++++++++++++++++++++++++++++
+
+PUT /_security/role/hr_role
+{
+  "indices": [
+    {
+      "names": [ "employees" ],
+      "privileges": [ "read" ],
+      "field_security": {
+        "grant": [ "name", "position", "department" ],
+        "except": [ "salary" ]
+      }
+    }
+  ]
+}
+
+
+3. Combined Row-Level and Field-Level Security
+
+PUT /_security/role/sales_manager
+{
+  "indices": [
+    {
+      "names": [ "employees" ],
+      "privileges": [ "read" ],
+      "query": {
+        "term": { "department": "sales" }
+      },
+      "field_security": {
+        "grant": [ "name", "position", "department", "sales_figures" ]
+      }
+    }
+  ]
+}
+
+
+
+
