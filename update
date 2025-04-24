@@ -1,0 +1,88 @@
+PUT _ingest/pipeline/upsert_pipeline
+{
+  "processors": [
+    {
+      "set": {
+        "field": "_id",
+        "value": "{{id}}"  
+      }
+    },
+    {
+      "script": {
+        "source": "ctx.timestamp = ctx.timestamp ?: Instant.ofEpochMilli(ctx._ingest.timestamp)"
+      }
+    }
+  ]
+}
+
+
+
+POST /employees_data/_update/1
+{
+  "doc": {                           // Fields to update if the document exists
+    "empname": "John Doe",
+    "salary": 90000,
+    "department": "Engineering"
+  },
+  "doc_as_upsert": true              // If the document does not exist, insert it with the fields in `doc`
+}
+
+
+
+String url="serverip:port";
+
+ public String searchEmployees() {
+        
+        String url = elasticsearchUrl + "/employees_data/_search";
+
+       
+        String query = """
+            {
+              "query": {
+                "bool": {
+                  "should": [
+                    {
+                      "match_phrase": {
+                        "empname": "rt bro"
+                      }
+                    },
+                    {
+                      "match_phrase": {
+                        "empname": "thew a"
+                      }
+                    }
+                  ],
+                  "minimum_should_match": 1
+                }
+              }
+            }
+        """;
+
+        
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+      
+        HttpEntity<String> requestEntity = new HttpEntity<>(query, headers);
+
+        try {
+          
+            ResponseEntity<String> response = restTemplate.exchange(
+                url, 
+                HttpMethod.POST, 
+                requestEntity, 
+                String.class
+            );
+
+           
+            if (response.getStatusCode() == HttpStatus.OK) {
+                return response.getBody();
+            } else {
+                return "Error: " + response.getStatusCode();
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Exception occurred: " + e.getMessage();
+        }
+    }
