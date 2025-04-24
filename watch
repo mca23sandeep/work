@@ -1,0 +1,75 @@
+PUT _watcher/watch/update_orders_on_customer_change2
+{
+  "trigger": {
+    "schedule": { "interval": "1m" }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": ["customer-index"],
+        "body": {
+          "query": {
+            "range": {
+              "last_updated": {
+                "gte": "now-5m"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": { "gt": 0 }
+    }
+  },
+  "transform": {
+    "script": {
+      "source": """
+        def customers = [:];
+        for (hit in ctx.payload.hits.hits) {
+          customers[hit._source.customer_id] = [
+            'name': hit._source.name,
+            'address': hit._source.address
+          ];
+        }
+        return ['customers': customers];
+      """
+    }
+  },
+  "actions": {
+    "update_orders": {
+      "webhook": {
+        "method": "POST",
+        "url": "http://localhost:9200/order-index/_update_by_query",
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Basic ZWxhc3RpYzpjaGFuZ2VtZQ=="
+        },
+        "body": """
+        {
+          "script": {
+            "source": "if (params.customers.containsKey(ctx._source.customer_id)) { def customer = params.customers[ctx._source.customer_id]; ctx._source.customer_name = customer.name; ctx._source.customer_address = customer.address; }",
+            "params": {
+              "customers": {{#toJson}}ctx.payload.customers{{/toJson}}
+            }
+          },
+          "query": {
+            "terms": {
+              "customer_id": {{#toJson}}ctx.payload.customers.keySet(){{/toJson}}
+            }
+          }
+        }
+        """
+      }
+    }
+  }
+}
+
+
+
+
+
+
+POST _watcher/watch/update_orders_on_customer_change2/_execute
