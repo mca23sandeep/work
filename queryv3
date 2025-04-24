@@ -1,0 +1,438 @@
+1. Employees who:
+Joined in the last 6 months
+AND
+(Live in 'California' OR 'Texas' OR 'Florida')
+AND
+(Have a salary between $70,000 and $100,000 OR Have taken more than 3 sick leaves in the last year)
+
+
+GET employees_aggregated_data2/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "joinDate": {
+              "gte": "2018-01-01", 
+              "lte": "2025-01-01"
+            }
+          }
+        },
+        {
+          "nested": {
+            "path": "addresses",
+            "query": {
+              "bool": {
+                "should": [
+                
+                  { "match": { "addresses.state": "New Jersey" } },
+                  { "match": { "addresses.state": "Texas" } },
+				  { "match": { "addresses.state": "Florida" } }
+                ],
+               "minimum_should_match": 1
+              }
+            }
+          }
+        }
+      
+      ],
+      "filter": [
+        {
+          "bool": {
+            "should": [
+              {
+                "nested": {
+                  "path": "salary",
+                  "query": {
+                    "range": {
+                      "salary.amount": {
+                        "gte": 80000,
+                        "lte": 100000
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "nested": {
+                  "path": "leave_summary",
+                  "query": {
+                    "bool": {
+                      "must": [
+                        { "term": { "leave_summary.year": 2025 } },
+                    { "range": { "leave_summary.sick_count": { "gt": 16 } } }
+
+                    ]
+                    }
+                  }
+                }
+              }
+            ],
+            "minimum_should_match": 1
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+2. Employees who:
+Have taken vacation leave in the last quarter
+AND 
+(Do NOT live in the 'USA' OR Live in 'Canada')
+AND 
+(Have a salary greater than $80,000 OR Have taken a sick leave longer than 7 days in the current year)
+
+
+
+GET employees_aggregated_data2/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "nested": {
+            "path": "leaves",
+            "query": {
+              "bool": {
+                "must": [
+                  { "match": { "leaves.leave_type": "vacation" } },
+                  {
+                    "range": {
+                      "leaves.leave_start_date": {
+                       "gte": "now-3M/M",
+                         "lt": "now/M"
+                        
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "filter": [
+        {
+          "bool": {
+            "should": [
+              {
+                "nested": {
+                  "path": "addresses",
+                  "query": {
+                    "bool": {
+                      "must_not": {
+                        "match": { "addresses.country": "USA" }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "nested": {
+                  "path": "addresses",
+                  "query": {
+                    "match": { "addresses.country": "Canada" }
+                  }
+                }
+              }
+            ],
+            "minimum_should_match": 1
+			
+          }
+        },
+        {
+          "bool": {
+            "should": [
+              {
+                "nested": {
+                  "path": "salary",
+                  "query": {
+                    "range": {
+                      "salary.amount": {
+                        "gt": 80000
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "nested": {
+                  "path": "leave_summary",
+                  "query": {
+                    "bool": {
+                      "must": [
+                         { "term": { "leave_summary.year": 2025 } },
+                        { "range": { "leave_summary.sick_count": { "gt": 7 } } }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "minimum_should_match": 1
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+3. Employees who:
+Joined between January 1st and March 31st of the current year
+AND 
+(Live in a city that starts with 'San' OR Live in a city that ends with 'ton')
+AND 
+(Have a salary within the top 10% of all employee salaries OR Have never taken any leave)
+
+GET employees_aggregated_data2/_search
+{
+  "size": 0,
+  "aggs": {
+    "nested_salary": {
+      "nested": {
+        "path": "salary"
+      },
+      "aggs": {
+        "top_10_percent_salary": {
+          "percentiles": {
+            "field": "salary.amount",
+            "percents": [90]
+          }
+        }
+      }
+    }
+  }
+}
+
+GET employees_aggregated_data2/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "joinDate": {
+              "gte": "now/y", 
+              "lte": "now+3M/y"
+            }
+          }
+        },
+        {
+          "nested": {
+            "path": "addresses",
+            "query": {
+              "bool": {
+                "should": [
+                  {
+                    "wildcard": {
+                      "addresses.city": "San*"
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "addresses.city": "*ton"
+                    }
+                  }
+                ],
+                "minimum_should_match": 1
+              }
+            }
+          }
+        }
+      ],
+      "should": [
+        {
+          "nested": {
+            "path": "salary",
+            "query": {
+              "range": {
+                "salary.amount": {
+                  "gte": 211000
+                }
+              }
+            }
+          }
+        },
+        {
+          "bool": {
+            "must_not": {
+              "exists": {
+                "field": "leaves"
+              }
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+
+GET employees_data/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "joinDate": {
+              "gte": "now/y", 
+              "lte": "now+3M/y"
+            }
+          }
+        },
+        {
+          "nested": {
+            "path": "addresses",
+            "query": {
+              "bool": {
+                "should": [
+                  {
+                    "wildcard": {
+                      "addresses.city": "San*"
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "addresses.city": "*ton"
+                    }
+                  }
+                ],
+                "minimum_should_match": 1
+              }
+            }
+          }
+        }
+      ],
+      "should": [
+        {
+          "bool": {
+            "filter": {
+              "range": {
+                "salary.amount": {
+                  "gte": top_10_percent_salary
+                }
+              }
+            }
+          }
+        },
+        {
+          "bool": {
+            "must_not": {
+              "exists": {
+                "field": "leaves"
+              }
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+
+4.Employees who:
+    Took leave in both January and August 2025.
+	
+	
+	
+	GET employees_data/_search
+{
+  "query": {
+    "nested": {
+      "path": "leaves",
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "range": {
+                "leaves.leave_start_date": {
+                  "gte": "2025-01-01||/M",
+                  "lte": "2025-01-31||/M"
+                }
+              }
+            },
+            {
+              "range": {
+                "leaves.leave_start_date": {
+                  "gte": "2025-08-01||/M",
+                  "lte": "2025-08-31||/M"
+                }
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    }
+  }
+}
+
+	
+GET employees_data/_search
+
+{
+  "query": {
+    "nested": {
+      "path": "leaves",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "leaves.leave_start_date": [
+                  "2025-01-01||/M",
+                  "2025-01-31||/M"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "leaves.leave_start_date": [
+                  "2025-08-01||/M",
+                  "2025-08-31||/M"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+	
+	
+	
+
+
+ 
+5.Employees who:
+Name contains this phrase "rt bro" or "thew a"	
+
+
+GET employees_data/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "match_phrase": {
+            "empname": "rt bro"
+          }
+        },
+        {
+          "match_phrase": {
+            "empname": "thew a"
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}	
